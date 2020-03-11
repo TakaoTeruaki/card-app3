@@ -1,0 +1,8 @@
+<div class="content__title">
+  投稿の編集
+</div>
+<%= form_with model: @post, class: :form, local: true do |form| %>
+  <%= form.text_field :hospital, placeholder: :病院名, class: :form__title %>
+  <%= form.text_area :holiday, placeholder: :休診日, class: :form__text %>
+  <%= form.submit '更新する', class: :form__btn %>
+<% end %>
