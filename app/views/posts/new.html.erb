@@ -1,9 +1,9 @@
 <div class="content__title">
-  新規記事の作成
+  病院の登録
 </div>
 
 <%= form_with model: @post, class: :form, local: true do |form| %>
   <%= form.text_field :hospital, placeholder: :病院名, class: :form__title %>
-  <%= form.text_field :holiday, placeholder: :休診日, class: :form__text %>
-  <%= form.submit '投稿する', class: :form__btn %>
+  <%= form.text_field :holiday, placeholder: :休診日, class: :form__title %>
+  <%= form.submit '登録する', class: :form__btn %>
 <% end %>
