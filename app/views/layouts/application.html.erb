@@ -11,7 +11,8 @@
 <body>
     <header class="header">
       <div class="header__title">
-        <%= link_to "card-app", root_path, class: "header__title--text" %>
+        <%= link_to "診察券", root_path, class: "header__title--text" %> 
+        <%= icon('fa', 'hospital-alt', class: "header__btn--icon") %>
       </div>
       <div class="header__right">
         <% if user_signed_in? %>

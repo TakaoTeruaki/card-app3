@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
     &__title{
-      font-size: 15px;
+      font-size: 18px;
       line-height: 56px;
       &--text{
         text-decoration: none;
@@ -27,11 +27,22 @@ body{
     }
   }
   .contents{
-    margin: 30px auto 0;
+    margin: 20px auto 0;
     background-color: #fff;
     height: 600px;
     width: 95%;
     overflow: scroll;
+    .search-input {
+      padding: 8px;
+      width: 300px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+    .search-btn {
+      border-radius: 5px;
+      background-color: #DDDDDD;
+
+    }
     .content{
       padding: 10px;
       border-bottom: 1px solid #f6f6f6;
