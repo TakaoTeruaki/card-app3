@@ -7,7 +7,7 @@
 <div class="postAuthor">
 </div>
 <div class="postHoliday">
-  <%= @post.holiday %>
+  休診日:<%= @post.holiday %>
 </div>
 <% if user_signed_in? && current_user.id == @post.user_id %>
   <div class="postManage">
