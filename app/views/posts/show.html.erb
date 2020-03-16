@@ -4,11 +4,19 @@
 <div class="card-image">
   <%= image_tag @post.image.to_s %>
 </div>
-<div class="postAuthor">
+<div class="postnumber">
+  カードNo.<%= @post.number %>
 </div>
 <div class="postHoliday">
   休診日:<%= @post.holiday %>
 </div>
+<%# ダミーqrコード %>
+<div class="qrcode">
+  <%# <img src="http://chart.apis.google.com/chart?cht=qr&chs=130x130&chl= <%= @post.created_at %>
+  <img src="http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl=https://tech-camp.in/">
+</div>
+<%# <div class="postAuthor">
+</div> %>
 <% if user_signed_in? && current_user.id == @post.user_id %>
   <div class="postManage">
     <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>

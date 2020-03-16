@@ -44,16 +44,21 @@ body{
 
     }
     .content{
-      padding: 10px;
+      padding: 25px;
       border-bottom: 1px solid #f6f6f6;
       display: flex;
       &__left{
-        padding-right: 20px;
+        padding-right: 30px;
         &--image{
           height: 150px;
           width: 210px;
-          border: solid 1px;
+          border: solid 1px #CCCCCC;
+          border-radius: 10px;
         }
+        &--image:hover {
+          transform: scale(1.2,1.2); /*画像の拡大*/
+          cursor: pointer; /*カーソルをポインターにする*/
+          }
       }
       &__right{
         width: calc(100%-100px);
@@ -107,8 +112,16 @@ body{
       font-weight: bold;
     }
     .card-image {
-      width: 500px;
+      width: 480px;
       height: 300px;
+      margin: 0 auto;
+      border: solid 1px #CCCCCC;
+      border-radius: 10px;
+
+    }
+    .qrcode {
+      width: 180px;
+      height: 180px;
       margin: 0 auto;
     }
     .postDate{
@@ -138,14 +151,18 @@ body{
         display: block;
         border-radius: 5px;
         color: #ffffff;
-        background-color:#777777;
+        background-color:#FF0000;
         padding: 0 10px;
         text-decoration: none;
         margin-left: 10px;
       }
     }
     .postHoliday{
-      margin: 20px 30px;
+      margin: 10px 30px;
+      text-align: center;
+    }
+    .postnumber{
+      margin: 10px 30px;
       text-align: center;
     }
   }
