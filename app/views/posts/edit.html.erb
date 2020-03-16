@@ -5,6 +5,7 @@
   <%= form.file_field :image %>
   <%= form.text_field :hospital, placeholder: :病院名, class: :form__title %>
   <%= form.text_field :holiday, placeholder: :休診日, class: :form__title %>
+  <%= form.text_field :tell, placeholder: :電話番号, class: :form__title %>
   <%= form.select :subject, [ "内科", "外科", "小児科" ,"皮膚科", "歯科", "眼科"], prompt: "診療科目を選択してください" %>
   <%= form.submit '更新する', class: :form__btn %>
 <% end %>
