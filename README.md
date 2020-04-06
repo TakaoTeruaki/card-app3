@@ -1,5 +1,5 @@
 # アプリ名:診察券管理アプリ
-<img width="1265" alt="スクリーンショット 2020-04-06 19 31 55" src="https://user-images.githubusercontent.com/61138363/78549463-65887000-783d-11ea-8d28-c7f7ca747bf6.png">
+![jFfqgwJTBAfidHHkdP331586172455-1586172517](https://user-images.githubusercontent.com/61138363/78554070-69b88b80-7845-11ea-958c-4e94d2ff3d1a.gif)
 
 ### 概要
 診察券の画像登録
