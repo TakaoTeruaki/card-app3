@@ -16,9 +16,7 @@
 <%# ダミーqrコード %>
 <div class="qrcode">
   <img src="http://chart.apis.google.com/chart?cht=qr&chs=130x130&chl=<%= @post.number %>">
-  <%# <img src="http://chart.apis.google.com/chart?cht=qr&chs=150x150&chl=https://tech-camp.in/"> %>
 </div>
-<%# <div class="postAuthor">
 </div> %>
 <% if user_signed_in? && current_user.id == @post.user_id %>
   <div class="postManage">
