@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :move_to_index, except: [:index, :search]
 
   def index
-    @posts = Post.includes(:user)
+    @posts = Post.where(user_id: current_user.id)
   end
 
   def new
@@ -20,7 +20,10 @@ class PostsController < ApplicationController
   end
 
   def search
-    @posts = Post.search(params[:keyword])
+    # @posts = Post.search(params[:keyword])
+    # binding.pry
+    @posts =Post.where('(hospital LIKE(?)) OR (user_id = ?)', params[:keyword], current_user.id)
+    # @posts.where(['hospital LIKE ? OR current_user.id LIKE ?', "%#{search}%", "%#{search}%"])
   end
 
   def edit

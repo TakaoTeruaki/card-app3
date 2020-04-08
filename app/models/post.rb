@@ -5,7 +5,8 @@ class Post < ApplicationRecord
   
   def self.search(search)
     if search
-      Post.where('hospital LIKE(?)', "%#{search}%")
+      # Post.where('hospital LIKE(?)', "%#{search}%")
+      # Post.where('(hospital LIKE(?)) AND (user_id = ?)', search, current_user.id)
     else
       Post.all
     end
