@@ -20,11 +20,6 @@ class PostsController < ApplicationController
     @posts = Post.includes(:user)
   end
 
-  def search
-    @posts = Post.search(params[:keyword])
-    @user = current_user.id
-  end
-
   def edit
     @post = Post.find(params[:id])
   end
